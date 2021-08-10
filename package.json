@@ -1,6 +1,6 @@
 {
-  "name": "meeusjs",
-  "version": "1.0.3",
+  "name": "meeusjs-fork",
+  "version": "1.0.4",
   "description": "Implementation of the Astronomical Algorithms of Jean Meeus in Javascript ",
   "dependencies": {},
   "devDependencies": {
@@ -25,7 +25,7 @@
   "main": "lib/Astro.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fabiz/Meeus.git"
+    "url": "git+https://github.com/vo-va/Meeus.git"
   },
   "keywords": [
     "meeus",
@@ -44,7 +44,7 @@
   "author": "Fabio Soldati (http://www.peakfinder.org)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Fabiz/Meeus/issues"
+    "url": "https://github.com/vo-va/Meeus/issues"
   },
-  "homepage": "https://github.com/Fabiz/Meeus#readme"
+  "homepage": "https://github.com/vo-va/Meeus#readme"
 }
