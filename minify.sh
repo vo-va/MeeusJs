@@ -8,8 +8,9 @@ rm -f *.min.js.jgz 2> /dev/null
 version=1.0.3
 
 echo 'build js'
-java -jar ./node_modules/closurecompiler/compiler/closure-compiler-v20161201.jar \
-	--compilation_level SIMPLE_OPTIMIZATIONS \
+java -jar /app/closure-compiler.jar \
+	--compilation_level BUNDLE \
+	--env BROWSER \
 	--js ./lib/Astro.js \
 	--js ./lib/Astro.Coord.js \
 	--js ./lib/Astro.DeltaT.js \
@@ -27,4 +28,8 @@ java -jar ./node_modules/closurecompiler/compiler/closure-compiler-v20161201.jar
 	--js ./lib/Astro.Solar.js \
 	--js ./lib/Astro.Solistice.js \
 	--js_output_file meuusjs.${version}.min.js
+
+ls
+
+cp meuusjs.${version}.min.js /out/meuusjs.${version}.min.js
 
